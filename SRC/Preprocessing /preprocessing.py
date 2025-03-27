@@ -44,7 +44,7 @@ class preprocessing():
 
     def run(self):
         path = "vid.mp4"
-        refrence,target= self.read_video(path,frame_index=20,max_interval=2)
+        refrence,target= self.read_video(path,frame_index=20,max_interval=1)
         self.display(refrence)
 
 
