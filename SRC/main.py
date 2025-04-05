@@ -1,14 +1,14 @@
 
 import cv2
-from DataGeneration import Data_generation
-from ImageDataset import ImageDataset
-from model import Model
-from Preprocessing import Preprocessing
+import DataGeneration
+import ImageDataset
+import model
+import Preprocessing
 from train import TrainModel
 class main():
    def __init__(self):
       pass
-   def run():
+   def run(self):
       pre = Data_generation("vid.mp4")
       train_images,target_images = pre.get_n_samples(1500)
       cv2.imshow(train_images[0])
@@ -28,6 +28,7 @@ class main():
       train_m.train()
 obj = main()
 obj.run()
+
 
 
 
